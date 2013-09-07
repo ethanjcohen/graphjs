@@ -1,23 +1,25 @@
 graphjs
 =======
 
-A JavaScript library for rendering a dynamic graph of nodes.
+A JavaScript library for rendering a dynamic graph of nodes. Perfect for showing dependency diagrams or flows.
 
-Nodes of the graph are DOM elements - which means nodes are fully customizable. You can display text or images or interactive features such as buttons - whatever.
+Nodes of the graph are DOM elements - which means nodes are fully customizable. Lines between the nodes are drawn using Raphael, which means they're cross-browser compatible.
 
-See live examples at graphjs.org
+Works in Chrome, FireFox and IE8+
 
-A simple example usage:
+See live examples at <a href="graphjs.org">graphjs.org</a>
 
+A simple example usage with two nodes:
+`````javascript
 var data = {
 	items: [
 		{
 			id: 1,
-			content: '<h1>This is node 1</h1>'
+			content: 'This is node 1'
 		},
 		{
 			id: 2,
-			content: '<h1>This is node 2</h1>'
+			content: 'This is node 2'
 		}
 	],
 	links: [
@@ -45,3 +47,4 @@ var graph = new Graph(data, options);
 
 //display using a selector, a dom element or a jquery element
 graph.renderTo('#graph'); 
+`````
