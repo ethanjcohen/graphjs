@@ -1,11 +1,14 @@
 graph.js
 =======
 
-A JavaScript library for rendering a dynamic graph of nodes. Perfect for showing dependency diagrams or flows.
+A JavaScript library for rendering a graph of nodes. Perfect for showing dependency diagrams or flows.
 
-Nodes of the graph are DOM elements - which means nodes are fully customizable. Lines between the nodes are drawn using Raphael, which means they're cross-browser compatible.
-
-Works in Chrome, FireFox and IE8+
+Features:
+- Nodes of the graph are DOM elements - which means nodes are fully customizable
+- Lines between the nodes are drawn using Raphael, which means they're cross-browser compatible
+- Works in Chrome, FireFox and IE8+
+- Nodes positions are calculated based on data, you won't need to hard-code x & y coordinates
+- Cool start-up animation
 
 See live examples at <a href="graphjs.org">graphjs.org</a>
 
