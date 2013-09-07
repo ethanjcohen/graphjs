@@ -1,4 +1,4 @@
-graphjs
+graph.js
 =======
 
 A JavaScript library for rendering a dynamic graph of nodes. Perfect for showing dependency diagrams or flows.
