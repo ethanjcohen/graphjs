@@ -18,11 +18,11 @@ var data = {
 	items: [
 		{
 			id: 1,
-			content: 'This is node 1'
+			content: '<h1>This is node 1</h1>'
 		},
 		{
 			id: 2,
-			content: 'This is node 2'
+			content: '<h2>This is node 2</h2>'
 		}
 	],
 	links: [
