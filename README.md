@@ -12,7 +12,7 @@ Features:
 - Nodes positions are calculated based on data, you won't need to hard-code x & y coordinates
 - Cool start-up animation
 
-See live examples at <a href="graphjs.org">graphjs.org</a>
+See live examples at <a href="http://graphjs.org">graphjs.org</a>
 
 A simple example usage with two nodes:
 `````javascript
