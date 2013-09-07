@@ -1,8 +1,10 @@
 graph.js
 =======
 
-A JavaScript library for rendering a graph of nodes. Perfect for showing dependency diagrams or flows.
-
+A JavaScript library for rendering a graph of nodes. Perfect for showing dependency or flow diagrams.
+<p>
+<img src="http://graphjs.org/screens/example2.png" />
+</p>
 Features:
 - Nodes of the graph are DOM elements - which means nodes are fully customizable
 - Designed to work with jQuery
