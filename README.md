@@ -5,6 +5,7 @@ A JavaScript library for rendering a graph of nodes. Perfect for showing depende
 
 Features:
 - Nodes of the graph are DOM elements - which means nodes are fully customizable
+- Designed to work with jQuery
 - Lines between the nodes are drawn using Raphael, which means they're cross-browser compatible
 - Works in Chrome, FireFox and IE8+
 - Nodes positions are calculated based on data, you won't need to hard-code x & y coordinates
