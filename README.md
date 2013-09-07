@@ -6,7 +6,7 @@ A JavaScript library for rendering a graph of nodes. Perfect for showing depende
 <img src="http://graphjs.org/screens/example2.png" />
 </p>
 Features:
-- Nodes of the graph are DOM elements - which means nodes are fully customizable
+- Nodes of the graph are DOM elements - nodes are fully customizable
 - Designed to work with jQuery
 - Works in Chrome, FireFox and IE8+ (at least)
 - Nodes positions are calculated based on data, you won't need to hard-code x & y coordinates
