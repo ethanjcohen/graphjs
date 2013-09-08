@@ -14,17 +14,18 @@ Features:
 
 See live examples at <a href="http://graphjs.org">graphjs.org</a>
 
-A simple example usage with two nodes:
+<h3>A simple example</h3>
+<img src="http://graphjs.org/screens/example3.png" />
 `````javascript
 var data = {
 	items: [
 		{
 			id: 1,
-			content: '<h1>This is node 1</h1>'
+			content: 'This is node 1'
 		},
 		{
 			id: 2,
-			content: '<h2>This is node 2</h2>'
+			content: 'This is node 2'
 		}
 	],
 	links: [
