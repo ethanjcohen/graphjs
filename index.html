@@ -63,13 +63,17 @@
       }
       .graphContainer
       {
-        position:relative;
-      	width:1px;
-      	height:1px;
-      	background:#D0E2F5;
+        padding:1em 1em 1em 1em;
+        background:#D0E2F5;
       	border-radius:3px;
       	border:1px solid #53A2FC;
         box-shadow: 5px 5px 3px #777777;
+      }
+      .graph
+      {
+        position:relative;
+      	width:1px;
+      	height:1px;
       }
     </style>
   </head>
@@ -88,7 +92,9 @@
         <section id="main-content">
           <p>
 <!--<img class="screen" src="http://graphjs.org/screens/example2.png">-->
-<div class="graphContainer example1"></div>
+<div class="graphContainer">
+  <div class="graph example1"></div>
+</div>
 </p>
 <h3>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
@@ -106,7 +112,9 @@
 
 <p>
   <!--<img class="screen" src="http://graphjs.org/screens/example3.png">-->
-  <div class="graphContainer example2"></div>
+<div class="graphContainer">
+  <div class="graph example2"></div>
+</div>
 </p>
 
 <div class="highlight"><pre><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
@@ -218,10 +226,10 @@
     };
     
     var graph = new Graph(data, options);
-    graph.renderTo('.graphContainer.example1');
+    graph.renderTo('.graph.example1');
     
-    $('.graphContainer.example1').width(graph.graphWidth);
-    $('.graphContainer.example1').height(graph.graphHeight);
+    $('.graph.example1').width(graph.graphWidth);
+    $('.graph.example1').height(graph.graphHeight);
     
     
     var data = {
@@ -248,8 +256,8 @@
     //display using a selector, a dom element or a jquery element
     graph2.renderTo('.graphContainer.example2');
     
-    $('.graphContainer.example2').width(graph2.graphWidth);
-    $('.graphContainer.example2').height(graph2.graphHeight);
+    $('.graph.example2').width(graph2.graphWidth);
+    $('.graph.example2').height(graph2.graphHeight);
   </script>
   </body>
 </html>
