@@ -21,6 +21,20 @@
         border:1px solid #53A2FC;
         box-shadow: 5px 5px 3px #777777;
       }
+      .graph_item
+      {
+      	position:absolute;
+      	border:1px solid #444444;
+      	overflow:auto;
+      	background:#eeeeee;
+      	text-align:center;
+      	vertical-align:middle;
+      	padding:3px 3px 3px 3px;
+      	border-radius:3px;
+      	display:none;
+      	font-family:verdana;
+      	font-size:10px;
+      }
     </style>
   </head>
 
@@ -37,8 +51,9 @@
       <div class="inner clearfix">
         <section id="main-content">
           <p>
-<img class="screen" src="http://graphjs.org/screens/example2.png"></p>
-
+<!--<img class="screen" src="http://graphjs.org/screens/example2.png">-->
+<div id="graph"></div>
+</p>
 <h3>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
 
@@ -107,7 +122,65 @@
         </aside>
       </div>
     </div>
-
-  
+  <script src="http://graphjs.org/graph.js"></script>
+  <script>
+    //example 1
+      var data = {
+    	items: [
+    		{
+    			id: 1,
+    			content: '<h1>Item 1</h1>',
+    			cls:'green'
+    		},
+    		{
+    			id: 2,
+    			content: '<h1>Item 2</h1>',
+    			cls:'lightblue'
+    		},
+    		{
+    			id: 3,
+    			content: '<h1>Item 3</h1>',
+    			cls:'lightblue'
+    		},
+    		{
+    			id: 4,
+    			content: '<h1>Item 4</h1>',
+    			cls:'red'
+    		}
+    	],
+    	links: [
+    		{
+    			from: 1,
+    			to: 2
+    		},
+    		{
+    			from: 1,
+    			to: 3
+    		},
+    		{
+    			from: 2,
+    			to: 4
+    		},
+    		{
+    			from: 3,
+    			to: 4
+    		}
+    	]
+    }
+    
+    var options = {
+    	itemWidth:150,
+    	itemHeight:25,
+    	verticalSpace:30,
+    	horSpace:40,
+    	arrowColor: '#555555'
+    }
+    
+    var graph = new Graph(data, options);
+    graph.renderTo('#graph');
+    
+    $('#graph').width(graph.graphWidth);
+    $('#graph').height(graph.graphHeight);
+  </script>
   </body>
 </html>
