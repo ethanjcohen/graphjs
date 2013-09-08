@@ -61,7 +61,7 @@
       	border:1px solid #1275FF;
       	background:#4DAFFF;
       }
-      #graph
+      .graphContainer
       {
         position:relative;
       	width:1px;
@@ -89,7 +89,7 @@
         <section id="main-content">
           <p>
 <!--<img class="screen" src="http://graphjs.org/screens/example2.png">-->
-<div id="graph"></div>
+<div class="graphContainer example1"></div>
 </p>
 <h3>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
@@ -105,7 +105,10 @@
 <h3>
 <a name="a-simple-example" class="anchor" href="#a-simple-example"><span class="octicon octicon-link"></span></a>A simple example</h3>
 
-<p><img class="screen" src="http://graphjs.org/screens/example3.png"></p>
+<p>
+  <!--<img class="screen" src="http://graphjs.org/screens/example3.png">-->
+  <div class="graphContainer example2"></div>
+</p>
 
 <div class="highlight"><pre><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">items</span><span class="o">:</span> <span class="p">[</span>
@@ -164,7 +167,7 @@
   <script src="http://graphjs.org/graph.js"></script>
   <script>
     //example 1
-      var data = {
+    var data = {
     	items: [
     		{
     			id: 1,
@@ -205,7 +208,7 @@
     			to: 4
     		}
     	]
-    }
+    };
     
     var options = {
     	itemWidth:150,
@@ -213,13 +216,41 @@
     	verticalSpace:30,
     	horSpace:40,
     	arrowColor: '#6DA7E3'
-    }
+    };
     
     var graph = new Graph(data, options);
-    graph.renderTo('#graph');
+    graph.renderTo('.graphContainer.example1');
     
-    $('#graph').width(graph.graphWidth);
-    $('#graph').height(graph.graphHeight);
+    $('.graphContainer.example1').width(graph.graphWidth);
+    $('.graphContainer.example1').height(graph.graphHeight);
+    
+    
+    var data = {
+        items: [
+            {
+                id: 1,
+                content: '<h1>This is node 1</h1>'
+            },
+            {
+                id: 2,
+                content: '<h1>This is node 2</h1>'
+            }
+        ],
+        links: [
+            {
+                from: 1,
+                to: 2
+            }
+        ]
+    };
+    
+    var graph2 = new Graph(data, options);
+    
+    //display using a selector, a dom element or a jquery element
+    graph2.renderTo('.graphContainer.example2');
+    
+    $('.graphContainer.example2').width(graph2.graphWidth);
+    $('.graphContainer.example2').height(graph2.graphHeight);
   </script>
   </body>
 </html>
