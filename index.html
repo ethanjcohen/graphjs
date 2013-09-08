@@ -35,7 +35,7 @@
       	font-family:verdana;
       	font-size:10px;
       }
-      .graph_item h1
+      .graph_item h5
       {
         font-size:1em;
         color:black;
@@ -44,10 +44,30 @@
         font-weight:normal;
         font-family:verdana;
       }
+      .graph_item.green
+      {
+      	border:1px solid green;
+      	background:#72E074;
+      }
+      .graph_item.red
+      {
+      	border:1px solid red;
+      	background:#E07272;
+      }
+      .graph_item.blue
+      {
+      	border:1px solid #5CACED;
+      	background:#9DC9ED;
+      }
+      .graph_item.lightblue
+      {
+      	border:1px solid #1275FF;
+      	background:#4DAFFF;
+      }
       #graph
       {
-      	width:1000px;
-      	height:1000px;
+      	width:1px;
+      	height:1px;
       	background:#D0E2F5;
       	padding:1em 1em 1em 1em;
       	border-radius:3px;
@@ -150,22 +170,22 @@
     	items: [
     		{
     			id: 1,
-    			content: '<h1>Item 1</h1>',
+    			content: '<h5>Item 1</h5>',
     			cls:'green'
     		},
     		{
     			id: 2,
-    			content: '<h1>Item 2</h1>',
+    			content: '<h5>Item 2</h5>',
     			cls:'lightblue'
     		},
     		{
     			id: 3,
-    			content: '<h1>Item 3</h1>',
+    			content: '<h5>Item 3</h5>',
     			cls:'lightblue'
     		},
     		{
     			id: 4,
-    			content: '<h1>Item 4</h1>',
+    			content: '<h5>Item 4</h5>',
     			cls:'red'
     		}
     	],
